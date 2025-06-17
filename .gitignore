@@ -1,0 +1,98 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.mo
+*.sqlite3
+*.db
+local_settings.py
+media/
+staticfiles/
+
+# Django migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code (optional if others use VS Code)
+.vscode/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# env files (dotenv)
+.env
+.env.*
+
+# Test output
+junit.xml
+
+# System
+*.swp
+*.swo
+
+# Ignore PyCharm user-specific files
+.idea/*
+!.idea/modules.xml
+!.idea/*.iml
+!.idea/misc.xml
+!.idea/inspectionProfiles/
+!.idea/codeStyles/
+
+# Avoid sharing local-specific config
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/profiles_settings.xml
+.idea/shelf/
