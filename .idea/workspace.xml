@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Add project structure for rest api">
-      <change afterPath="$PROJECT_DIR$/api/serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Feat: add PUT and DELETE action">
+      <change afterPath="$PROJECT_DIR$/api/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Register/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Register/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -43,7 +58,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "Auth",
+    "last_opened_file_path": "/Users/gabrielececcherini/PycharmProjects/DjangoProject/templates/Register",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +70,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/Register" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -100,7 +120,13 @@
       <option name="presentableId" value="Default" />
       <updated>1750172605977</updated>
       <workItem from="1750172607003" duration="74000" />
-      <workItem from="1750178615988" duration="1923000" />
+      <workItem from="1750178615988" duration="3987000" />
+      <workItem from="1750184848567" duration="1949000" />
+      <workItem from="1750240619549" duration="2864000" />
+      <workItem from="1750262709813" duration="101000" />
+      <workItem from="1750263894518" duration="2173000" />
+      <workItem from="1750334891357" duration="7125000" />
+      <workItem from="1750342293404" duration="9268000" />
     </task>
     <task id="LOCAL-00001" summary="Add project structure for rest api">
       <option name="closed" value="true" />
@@ -110,14 +136,60 @@
       <option name="project" value="LOCAL" />
       <updated>1750179450357</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Feat: add forecast model, serializer and get method returning a mock object&#10;&#10;- the mock object is randomly auto-generated">
+      <option name="closed" value="true" />
+      <created>1750181023666</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750181023666</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Feat: add POST action to add forecast to db">
+      <option name="closed" value="true" />
+      <created>1750182542976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750182542976</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Feat: add POST action to add forecast to db">
+      <option name="closed" value="true" />
+      <created>1750182595081</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750182595081</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Feat: add PUT and DELETE action">
+      <option name="closed" value="true" />
+      <created>1750186800383</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750186800383</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add project structure for rest api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add project structure for rest api" />
+    <MESSAGE value="Feat: add forecast model, serializer and get method returning a mock object&#10;&#10;- the mock object is randomly auto-generated" />
+    <MESSAGE value="Feat: add POST action to add forecast to db" />
+    <MESSAGE value="Feat: add PUT and DELETE action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: add PUT and DELETE action" />
   </component>
 </project>
