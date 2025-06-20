@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Feat: add PUT and DELETE action">
-      <change afterPath="$PROJECT_DIR$/api/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Register/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Register/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Feat: add auth using JWT token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
     </list>
@@ -58,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "Auth",
     "last_opened_file_path": "/Users/gabrielececcherini/PycharmProjects/DjangoProject/templates/Register",
     "node.js.detected.package.eslint": "true",
@@ -126,7 +116,8 @@
       <workItem from="1750262709813" duration="101000" />
       <workItem from="1750263894518" duration="2173000" />
       <workItem from="1750334891357" duration="7125000" />
-      <workItem from="1750342293404" duration="9268000" />
+      <workItem from="1750342293404" duration="10454000" />
+      <workItem from="1750419724604" duration="4431000" />
     </task>
     <task id="LOCAL-00001" summary="Add project structure for rest api">
       <option name="closed" value="true" />
@@ -168,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750186800383</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Feat: add auth using JWT token">
+      <option name="closed" value="true" />
+      <created>1750362964817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750362964817</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +189,7 @@
     <MESSAGE value="Feat: add forecast model, serializer and get method returning a mock object&#10;&#10;- the mock object is randomly auto-generated" />
     <MESSAGE value="Feat: add POST action to add forecast to db" />
     <MESSAGE value="Feat: add PUT and DELETE action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: add PUT and DELETE action" />
+    <MESSAGE value="Feat: add auth using JWT token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: add auth using JWT token" />
   </component>
 </project>
