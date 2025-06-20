@@ -1,4 +1,8 @@
+import datetime
+
 from rest_framework import serializers
+
+from api.models import APICallRecord
 from .models import CustomUser
 from django.contrib.auth.password_validation import validate_password
 
@@ -24,4 +28,11 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         )
         user.set_password(validated_data['password'])  # Hash the password
         user.save()
+
+        userRecord = APICallRecord(
+            user_id = user.id,
+            count = 0,
+            last_call = "2025-06-20"
+        )
+        userRecord.save()
         return user

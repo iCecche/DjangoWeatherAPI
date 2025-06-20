@@ -1,11 +1,11 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.decorators import action
+from rest_framework.decorators import action, permission_classes
 from .serializer import UserRegisterSerializer
 
 class UserViewSet(ViewSet):
-    @action(detail=False, methods=['post'])
+    @action(detail=False, methods=['post'], permission_classes = [])
     def register(self, request):
         """
         POST /api/users/register/

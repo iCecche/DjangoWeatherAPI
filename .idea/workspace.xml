@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Feat: add by_location and by_date forecast search">
-      <change afterPath="$PROJECT_DIR$/CustomUser/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomUser/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Fix: fix JWT auth using custom user table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomUser/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomUser/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/permissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +119,7 @@
       <workItem from="1750263894518" duration="2173000" />
       <workItem from="1750334891357" duration="7125000" />
       <workItem from="1750342293404" duration="10454000" />
-      <workItem from="1750419724604" duration="15274000" />
+      <workItem from="1750419724604" duration="17427000" />
     </task>
     <task id="LOCAL-00001" summary="Add project structure for rest api">
       <option name="closed" value="true" />
@@ -203,7 +193,31 @@
       <option name="project" value="LOCAL" />
       <updated>1750424633464</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix: fix JWT auth using custom user table">
+      <option name="closed" value="true" />
+      <created>1750435690515</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750435690515</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix: fix JWT auth using custom user table">
+      <option name="closed" value="true" />
+      <created>1750435711515</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1750435711515</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix: fix JWT auth using custom user table">
+      <option name="closed" value="true" />
+      <created>1750435722798</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1750435722798</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +241,7 @@
     <MESSAGE value="Feat: add PUT and DELETE action" />
     <MESSAGE value="Feat: add auth using JWT token" />
     <MESSAGE value="Feat: add by_location and by_date forecast search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: add by_location and by_date forecast search" />
+    <MESSAGE value="Fix: fix JWT auth using custom user table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: fix JWT auth using custom user table" />
   </component>
 </project>
