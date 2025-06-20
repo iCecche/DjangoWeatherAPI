@@ -81,7 +81,7 @@ junit.xml
 *.swp
 *.swo
 
-# Ignore PyCharm user-specific files
+# Ignore PyCharm CustomUser-specific files
 .idea/*
 !.idea/modules.xml
 !.idea/*.iml

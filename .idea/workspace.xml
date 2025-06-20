@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Feat: add auth using JWT token">
+    <list default="true" id="fbc0add7-eaa1-4f17-8efa-94db89e2ab45" name="Changes" comment="Feat: add by_location and by_date forecast search">
+      <change afterPath="$PROJECT_DIR$/CustomUser/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomUser/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomUser/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +61,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "Auth",
+    "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/gabrielececcherini/PycharmProjects/DjangoProject/templates/Register",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -117,7 +129,7 @@
       <workItem from="1750263894518" duration="2173000" />
       <workItem from="1750334891357" duration="7125000" />
       <workItem from="1750342293404" duration="10454000" />
-      <workItem from="1750419724604" duration="4431000" />
+      <workItem from="1750419724604" duration="15274000" />
     </task>
     <task id="LOCAL-00001" summary="Add project structure for rest api">
       <option name="closed" value="true" />
@@ -167,7 +179,31 @@
       <option name="project" value="LOCAL" />
       <updated>1750362964817</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Feat: add by_location and by_date forecast search">
+      <option name="closed" value="true" />
+      <created>1750424356558</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750424356558</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Feat: add by_location and by_date forecast search">
+      <option name="closed" value="true" />
+      <created>1750424587046</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750424587046</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Feat: add by_location and by_date forecast search">
+      <option name="closed" value="true" />
+      <created>1750424633464</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1750424633464</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +226,7 @@
     <MESSAGE value="Feat: add POST action to add forecast to db" />
     <MESSAGE value="Feat: add PUT and DELETE action" />
     <MESSAGE value="Feat: add auth using JWT token" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: add auth using JWT token" />
+    <MESSAGE value="Feat: add by_location and by_date forecast search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: add by_location and by_date forecast search" />
   </component>
 </project>

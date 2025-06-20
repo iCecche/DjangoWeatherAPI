@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.viewsets import ViewSet
 
-from .models import Forecast
+from .models import Forecast, APICallRecord
 from .serializer import ForecastSerializer
 from .permissions import IsPremiumOrLimitedUser
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
@@ -20,6 +20,8 @@ class ForecastViewSet(ViewSet):
         
     def list(self, request):
         forecast = Forecast.objects.all()
+        record, _ = APICallRecord.objects.get_or_create(user=request.user)
+        record.increment_daily_requests()
         if len(forecast) > 0:
             serializer = ForecastSerializer(forecast, many=True)
             return Response(serializer.data, status = status.HTTP_200_OK)
@@ -30,6 +32,8 @@ class ForecastViewSet(ViewSet):
         if not pk:
             return Response(status=status.HTTP_400_BAD_REQUEST)
         forecast = Forecast.objects.get(pk = pk)
+        record, _ = APICallRecord.objects.get_or_create(user=request.user)
+        record.increment_daily_requests()
         if forecast:
             serializer = ForecastSerializer(forecast)
             return Response(serializer.data, status = status.HTTP_200_OK)
@@ -77,6 +81,8 @@ class ForecastViewSet(ViewSet):
         if not location:
             return Response({"detail": "Parametro 'location' mancante."}, status=status.HTTP_400_BAD_REQUEST)
         forecasts = Forecast.objects.filter(location =location)
+        record, _ = APICallRecord.objects.get_or_create(user=request.user)
+        record.increment_daily_requests()
         if forecasts.exists():
             serializer = ForecastSerializer(forecasts, many=True)
             return Response(serializer.data)
@@ -88,6 +94,8 @@ class ForecastViewSet(ViewSet):
         if not date:
             return Response({"detail": "Parametro 'date' mancante."}, status=status.HTTP_400_BAD_REQUEST)
         forecasts = Forecast.objects.filter(date=date)
+        record, _ = APICallRecord.objects.get_or_create(user=request.user)
+        record.increment_daily_requests()
         if forecasts.exists():
             serializer = ForecastSerializer(forecasts, many=True)
             return Response(serializer.data)
