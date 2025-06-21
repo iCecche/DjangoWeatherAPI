@@ -5,7 +5,8 @@ from rest_framework.decorators import action, permission_classes
 from .serializer import UserRegisterSerializer
 
 class UserViewSet(ViewSet):
-    @action(detail=False, methods=['post'], permission_classes = [])
+    permission_classes = []
+    @action(detail=False, methods=['post'])
     def register(self, request):
         """
         POST /api/users/register/
