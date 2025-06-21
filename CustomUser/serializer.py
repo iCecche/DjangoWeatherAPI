@@ -13,7 +13,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CustomUser
-        fields = '__all__'
+        fields = ['username', 'password', 'password2', 'is_premium', 'is_superuser']
         extra_kwargs = {'username': {'required': True}}
 
     def validate(self, data):
@@ -24,7 +24,8 @@ class UserRegisterSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = CustomUser(
             username=validated_data['username'],
-            is_premium=validated_data['is_premium']
+            is_premium=validated_data['is_premium'],
+            is_superuser=validated_data['is_superuser']
         )
         user.set_password(validated_data['password'])  # Hash the password
         user.save()

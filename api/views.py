@@ -5,8 +5,8 @@ from rest_framework.viewsets import ViewSet
 
 from .models import Forecast, APICallRecord
 from .serializer import ForecastSerializer
-from .permissions import IsPremiumOrLimitedUser
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from .permissions import IsPremiumOrLimitedUser, IsSuperUser
+from rest_framework.permissions import IsAuthenticated
 
 class ForecastViewSet(ViewSet):
     serializer_class = ForecastSerializer
@@ -14,7 +14,7 @@ class ForecastViewSet(ViewSet):
 
     def get_permissions(self):
         if self.action == 'create' or self.action == 'update' or self.action == "partial_update" or self.action == 'delete':
-            return [IsAuthenticated(), IsAdminUser()]
+            return [IsAuthenticated(), IsSuperUser()]
         else:
             return [permission() for permission in self.permission_classes]
         
