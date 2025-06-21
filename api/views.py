@@ -1,16 +1,17 @@
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.throttling import AnonRateThrottle
 from rest_framework.viewsets import ViewSet
 
 from .models import Forecast, History
 from .serializer import ForecastSerializer, HistorySerializer
 from .permissions import IsSuperUser
-from rest_framework.permissions import IsAuthenticated
-
+from rest_framework.permissions import IsAuthenticated, AllowAny
 class ForecastViewSet(ViewSet):
     serializer_class = ForecastSerializer
-    permission_classes = []
+    throttle_classes = [AnonRateThrottle]
+    permission_classes = [AllowAny]
 
     def get_permissions(self):
         if self.action == 'create' or self.action == 'update' or self.action == "partial_update" or self.action == 'delete':
@@ -73,7 +74,7 @@ class ForecastViewSet(ViewSet):
         else:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
-    @action(detail=False, methods=['get'], permission_classes = [IsAuthenticated])
+    @action(detail=False, methods=['get'], permission_classes = [IsAuthenticated], throttle_classes=[AnonRateThrottle])
     def by_location(self, request):
         location = request.query_params.get('location')
         if not location:
@@ -85,7 +86,7 @@ class ForecastViewSet(ViewSet):
             return Response(serializer.data)
         return Response({"detail": "Nessuna previsione trovata."}, status=status.HTTP_404_NOT_FOUND)
 
-    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated], throttle_classes=[AnonRateThrottle])
     def by_date(self, request):
         date = request.query_params.get('date')
         if not date:
