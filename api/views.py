@@ -1,16 +1,17 @@
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.throttling import AnonRateThrottle
 from rest_framework.viewsets import ViewSet
 
 from .models import Forecast, History
 from .serializer import ForecastSerializer, HistorySerializer
 from .permissions import IsSuperUser
-from rest_framework.permissions import IsAuthenticated
-
+from rest_framework.permissions import IsAuthenticated, AllowAny
 class ForecastViewSet(ViewSet):
     serializer_class = ForecastSerializer
-    permission_classes = []
+    throttle_classes = [AnonRateThrottle]
+    permission_classes = [AllowAny]
 
     def get_permissions(self):
         if self.action == 'create' or self.action == 'update' or self.action == "partial_update" or self.action == 'delete':
@@ -73,7 +74,7 @@ class ForecastViewSet(ViewSet):
         else:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
-    @action(detail=False, methods=['get'], permission_classes = [IsAuthenticated])
+    @action(detail=False, methods=['get'], permission_classes = [IsAuthenticated], throttle_classes=[AnonRateThrottle])
     def by_location(self, request):
         location = request.query_params.get('location')
         if not location:
@@ -85,7 +86,7 @@ class ForecastViewSet(ViewSet):
             return Response(serializer.data)
         return Response({"detail": "Nessuna previsione trovata."}, status=status.HTTP_404_NOT_FOUND)
 
-    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated], throttle_classes=[AnonRateThrottle])
     def by_date(self, request):
         date = request.query_params.get('date')
         if not date:
@@ -114,16 +115,16 @@ class ForecastViewSet(ViewSet):
         }
 
 class HistoryViewSet(ViewSet):
-    serializer_class = ForecastSerializer
+    serializer_class = HistorySerializer
     permission_classes = [IsAuthenticated]
 
     def get_permissions(self):
         return [permission() for permission in self.permission_classes]
 
     def list(self, request):
-        history = History.objects.all()
+        history = History.objects.filter(user_id = request.user.id)
         if len(history) > 0:
-            serializer = ForecastSerializer(history, many=True)
+            serializer = HistorySerializer(history, many=True)
             return Response(serializer.data, status = status.HTTP_200_OK)
         else:
             return Response(status=status.HTTP_404_NOT_FOUND)
@@ -135,7 +136,7 @@ class HistoryViewSet(ViewSet):
             return Response({"detail": "Parametro 'date' mancante."}, status=status.HTTP_400_BAD_REQUEST)
         history = History.objects.filter(date=date)
         if history.exists():
-            serializer = ForecastSerializer(history, many=True)
+            serializer = HistorySerializer(history, many=True)
             return Response(serializer.data)
         return Response({"detail": "Nessuna previsione trovata."}, status=status.HTTP_404_NOT_FOUND)
 
@@ -146,16 +147,9 @@ class HistoryViewSet(ViewSet):
             return Response({"detail": "Parametro 'location' mancante."}, status=status.HTTP_400_BAD_REQUEST)
         history = History.objects.filter(location =location)
         if history.exists():
-            serializer = ForecastSerializer(history, many=True)
+            serializer = HistorySerializer(history, many=True)
             return Response(serializer.data)
         return Response({"detail": "Nessuna previsione trovata."}, status=status.HTTP_404_NOT_FOUND)
-
-    def create(self, request):
-        serializer = HistorySerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk = None):
         if not pk:

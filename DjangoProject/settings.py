@@ -133,6 +133,10 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '10/day',         # Limite per utenti non autenticati
+        'user': '1000/day',       # Limite per utenti autenticati (può essere illimitato se metti un numero alto)
+    }
 }
 
 SIMPLE_JWT = {
