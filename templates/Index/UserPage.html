@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Previsioni{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/UserPage.css' %}">
+</head>
+<body>
+<header>
+    <nav>
+        <h1>🌦️ Meteo</h1>
+        {% if user.is_authenticated %}
+            <span>Benvenuto {{ user.username }}!</span>
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button type="submit">Logout</button>
+            </form>
+        {% else %}
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Registrati</a>
+        {% endif %}
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <form id="filter_form">
+            <label>Località: <input type="text" name="location" required></label>
+            <label>Data: <input type="date" name="date"></label>
+            <label>Ora: <input type="time" name="time"></label>
+        </form>
+        <form id="apiForm">
+            {% csrf_token %}
+            <meta name="csrf-token" content="{{ csrf_token }}">
+            <label>Metodo HTTP</label>
+            <select name="method">
+                <option>GET</option>
+            </select>
+
+            <label>Endpoint</label>
+            <select name="endpoint">
+                <option>/api/forecast/</option>
+                <option>/api/history/</option>
+            </select>
+            <button type="submit">Invia richiesta</button>
+        </form>
+        <h3>Risposta:</h3>
+        <button onclick="toggleView()">Switch View</button>
+        <div id="table-container"></div>
+        <pre id="json-view"></pre>
+    </div>
+</main>
+<script src="{% static 'js/UserPage.js' %}"></script>
+</body>
+</html>

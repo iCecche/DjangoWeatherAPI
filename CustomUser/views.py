@@ -1,19 +1,38 @@
-from rest_framework.viewsets import ViewSet
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.decorators import action, permission_classes
-from .serializer import UserRegisterSerializer
+from django.contrib.auth import login
+from django.shortcuts import render, redirect
+from .forms import CustomAuthenticationForm, CustomUserCreationForm
 
-class UserViewSet(ViewSet):
-    permission_classes = []
-    @action(detail=False, methods=['post'])
-    def register(self, request):
-        """
-        POST /api/users/register/
-        Registra un nuovo utente
-        """
-        serializer = UserRegisterSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response({"detail": "Registrazione completata."}, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+def registerView(request):
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            login(request, form.save())
+            return redirect('login')
+    else:
+        form = CustomUserCreationForm()
+    return render(request, "registration/signup.html", {'form': form})
+
+def loginView(request):
+    if request.method == 'POST':
+        form = CustomAuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            if user.is_superuser:
+                return redirect(admin)
+            else:
+                return redirect(home)
+    else:
+        form = CustomAuthenticationForm()
+    return render(request, "registration/login.html", {'form': form})
+
+def home(request):
+    if request.user.is_authenticated and request.user.is_superuser:
+        return redirect(admin)
+    return render(request, "index/UserPage.html")
+
+def admin(request):
+    if request.user.is_superuser:
+        return render(request, "index/AdminPage.html")
+    else:
+        return redirect(home)

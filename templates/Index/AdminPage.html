@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Previsioni{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/AdminPage.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+    <h1>🌦️ Meteo</h1>
+      {% if user.is_authenticated %}
+        <span>Benvenuto {{ user.username }}!</span>
+        <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+        </form>
+      {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Registrati</a>
+      {% endif %}
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+        <form id="apiForm">
+            {% csrf_token %}
+            <meta name="csrf-token" content="{{ csrf_token }}">
+            <label>Metodo HTTP</label>
+            <select name="method" id="method">
+                <option>GET</option>
+                <option>POST</option>
+                <option>PUT</option>
+                <option>PATCH</option>
+                <option>DELETE</option>
+            </select>
+
+            <label>Endpoint (relativo)</label>
+            <select name="endpoint">
+                <option>/api/forecast/</option>
+                <option>/api/history/</option>
+            </select>
+
+            <label>ID (solo per PUT, PATCH, DELETE)</label>
+            <input type="text" name="resource_id" id="resource_id" placeholder="ID risorsa" disabled>
+
+            <label>Body (JSON, opzionale)</label>
+            <textarea name="payload" placeholder='{"key":"value"}'></textarea>
+
+            <button type="submit">Invia richiesta</button>
+        </form>
+
+        <h3>Risposta:</h3>
+        <button onclick="toggleView()">Switch View</button>
+        <div id="table-container"></div>
+        <pre id="json-view"></pre>
+    </div>
+    </main>
+<script src="{% static 'js/AdminPage.js' %}"></script>
+</body>
+</html>

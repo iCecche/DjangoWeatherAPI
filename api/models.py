@@ -15,8 +15,9 @@ class Forecast(models.Model):
 
 class History(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    forecast_result = models.JSONField(null=True, blank=True)
+    method = models.CharField(max_length=10, null=True, blank=True)
+    endpoint = models.CharField(max_length=255, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.user.username} - {self.created_at} ({self.forecast_result})"
+        return f"{self.user.username} - {self.created_at} - ({self.method} - {self.endpoint})"

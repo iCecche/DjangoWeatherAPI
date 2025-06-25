@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Forecast, History
 
-# Register your models here.
+# Registration your models here.
+admin.site.register(Forecast)
+
+admin.site.register(History)
