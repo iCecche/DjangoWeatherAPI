@@ -1,3 +1,5 @@
+from time import localtime
+
 from rest_framework import serializers
 from api.models import Forecast, History
 
@@ -9,14 +11,20 @@ class ForecastSerializer(serializers.ModelSerializer):
 
 
 class HistorySerializer(serializers.ModelSerializer):
+    created_on = serializers.SerializerMethodField()
+
     class Meta:
         model = History
-        fields = ["user", 'forecast_result']
+        fields = ["user", 'method', 'endpoint', 'created_on']
+
+    def get_created_on(self, obj):
+        return obj.created_at.strftime("%d %b %Y, %H:%M:%S")
 
     def create(self, validated_data):
         history = History(
             user = validated_data['user'],
-            forecast_result = validated_data['forecast_result']
+            method=validated_data['method'],
+            endpoint=validated_data['endpoint']
         )
         history.save()
         return history

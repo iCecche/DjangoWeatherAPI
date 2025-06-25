@@ -118,18 +118,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+# Opzionale ma utile in sviluppo per dirgli dove cercare i file statici
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+SESSION_COOKIE_AGE = 86400  # 1 giorno in secondi
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 AUTH_USER_MODEL = 'CustomUser.CustomUser'
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
@@ -137,17 +142,4 @@ REST_FRAMEWORK = {
         'anon': '10/day',         # Limite per utenti non autenticati
         'user': '1000/day',       # Limite per utenti autenticati (può essere illimitato se metti un numero alto)
     }
-}
-
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=180),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=50),
-    'AUTH_HEADER_TYPES': ('Bearer',),
-    'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
-    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
-    'USER_ID_FIELD': 'id',  # se usi CustomUser, va benissimo l'id
-    'USER_ID_CLAIM': 'user_id',
-    'TOKEN_TYPE_CLAIM': 'token_type',
-    'ALGORITHM': 'HS256',
-    'AUTH_USER_MODEL' : 'CustomUser.CustomUser'
 }
