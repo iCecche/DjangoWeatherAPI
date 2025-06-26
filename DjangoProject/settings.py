@@ -130,6 +130,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SESSION_COOKIE_AGE = 86400  # 1 giorno in secondi
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = [
+    'https://djangoweatherapi-production.up.railway.app'
+]
 
 AUTH_USER_MODEL = 'CustomUser.CustomUser'
 REST_FRAMEWORK = {
