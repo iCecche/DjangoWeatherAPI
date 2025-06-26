@@ -1,5 +1,3 @@
-alert("loaded");
-
 const form = document.getElementById("apiForm");
 const csrftoken = getCookie('csrftoken');
 const tableContainer = document.getElementById('table-container');

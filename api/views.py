@@ -1,5 +1,3 @@
-from django.shortcuts import render
-from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.throttling import AnonRateThrottle
@@ -41,32 +39,32 @@ class ForecastViewSet(ViewSet):
         except Forecast.DoesNotExist:
             return Response({"detail": "Nessuna previsione trovata."}, status=status.HTTP_404_NOT_FOUND)
 
-    def retrieve(self, request, pk = None):
+    def retrieve(self, request, pk=None):
         if not pk:
             return Response(status=status.HTTP_400_BAD_REQUEST)
         try:
-            forecast = Forecast.objects.get(pk = pk)
+            forecast = Forecast.objects.get(pk=pk)
             serializer = ForecastSerializer(forecast)
             self.saveHistory(request)
-            return Response(serializer.data, status = status.HTTP_200_OK)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         except Forecast.DoesNotExist:
             return Response({"detail": "Nessuna previsione trovata."}, status=status.HTTP_404_NOT_FOUND)
 
     def create(self, request):
         data = request.data
         is_many = isinstance(data, list)
-        serializer = ForecastSerializer(data= data, many=is_many)
+        serializer = ForecastSerializer(data=data, many=is_many)
         if serializer.is_valid():
             serializer.save()
             self.saveHistory(request)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def update(self, request, pk = None):
+    def update(self, request, pk=None):
         if not pk:
             return Response({"error": "ID non fornito."}, status=status.HTTP_400_BAD_REQUEST)
         try:
-            forecast = Forecast.objects.get(pk = pk)
+            forecast = Forecast.objects.get(pk=pk)
             serializer = ForecastSerializer(forecast, data=request.data)
             if serializer.is_valid():
                 serializer.save()
@@ -75,11 +73,11 @@ class ForecastViewSet(ViewSet):
         except Forecast.DoesNotExist:
             return Response({"detail": "Nessuna previsione trovata."}, status=status.HTTP_404_NOT_FOUND)
 
-    def partial_update(self, request, pk = None):
+    def partial_update(self, request, pk=None):
         if not pk:
             return Response({"error:": "ID non fornito."}, status=status.HTTP_400_BAD_REQUEST)
         try:
-            forecast = Forecast.objects.get(pk = pk)
+            forecast = Forecast.objects.get(pk=pk)
             serializer = ForecastSerializer(forecast, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
@@ -88,11 +86,11 @@ class ForecastViewSet(ViewSet):
         except Forecast.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
-    def delete(self, request, pk = None):
+    def delete(self, request, pk=None):
         if not pk:
             return Response({"error": "ID non fornito"}, status=status.HTTP_400_BAD_REQUEST)
         try:
-            forecast = Forecast.objects.get(pk = pk)
+            forecast = Forecast.objects.get(pk=pk)
             forecast.delete()
             self.saveHistory(request)
             return Response(status=status.HTTP_204_NO_CONTENT)
@@ -122,42 +120,25 @@ class HistoryViewSet(ViewSet):
 
     def list(self, request):
         try:
-            history = History.objects.filter(user_id = request.user.id)
+            history = History.objects.filter(user_id=request.user.id)
             serializer = HistorySerializer(history, many=True)
-            return Response(serializer.data, status = status.HTTP_200_OK)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         except History.DoesNotExist:
             return Response({"detail": "Nessun record trovato."}, status=status.HTTP_404_NOT_FOUND)
 
-    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
-    def by_date(self, request):
-        date = request.query_params.get('date')
-        if not date:
-            return Response({"error": "Parametro 'date' mancante."}, status=status.HTTP_400_BAD_REQUEST)
-        try:
-            history = History.objects.filter(date=date)
-            serializer = HistorySerializer(history, many=True)
-            return Response(serializer.data)
-        except History.DoesNotExist:
-            return Response({"detail": "Nessun record trovato."}, status=status.HTTP_404_NOT_FOUND)
+    def create(self, request):
+        serializer = HistorySerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
-    def by_location(self, request):
-        location = request.query_params.get('location')
-        if not location:
-            return Response({"error": "Parametro 'location' mancante."}, status=status.HTTP_400_BAD_REQUEST)
-        try:
-            history = History.objects.filter(location =location)
-            serializer = HistorySerializer(history, many=True)
-            return Response(serializer.data)
-        except History.DoesNotExist:
-            return Response({"detail": "Nessun record trovato."}, status=status.HTTP_404_NOT_FOUND)
-
-    def delete(self, request, pk = None):
+    def delete(self, request, pk=None):
         if not pk:
             return Response(status=status.HTTP_400_BAD_REQUEST)
         try:
-            history = History.objects.get(pk = pk)
+            history = History.objects.get(pk=pk)
             history.delete()
-            return Response({"detail" : "record cancellato correttamente"}, status=status.HTTP_204_NO_CONTENT)
+            return Response({"detail": "record cancellato correttamente"}, status=status.HTTP_204_NO_CONTENT)
         except History.DoesNotExist:
             return Response({"detail": "Nessun record trovato."}, status=status.HTTP_404_NOT_FOUND)
