@@ -1,0 +1,2100 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add forecast",
+    "content_type": 6,
+    "codename": "add_forecast"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change forecast",
+    "content_type": 6,
+    "codename": "change_forecast"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete forecast",
+    "content_type": 6,
+    "codename": "delete_forecast"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view forecast",
+    "content_type": 6,
+    "codename": "view_forecast"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add history",
+    "content_type": 7,
+    "codename": "add_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change history",
+    "content_type": 7,
+    "codename": "change_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete history",
+    "content_type": 7,
+    "codename": "delete_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view history",
+    "content_type": 7,
+    "codename": "view_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 8,
+    "codename": "add_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 8,
+    "codename": "change_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 8,
+    "codename": "delete_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 8,
+    "codename": "view_customuser"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "api",
+    "model": "forecast"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "api",
+    "model": "history"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "CustomUser",
+    "model": "customuser"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "15nml48lwfq32gyngvzezkamm9pfabuq",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgyggu3fcMzQCDVA0kpV0Z765NutDtf-_9l5hoW8u0dV6mOYmLMOL0uwWKD647SHeqtyZjq-syB7kr8qBdji3x83q4fweFevnW1nlC6wmsjR48BsgKFQaViAejUKvsk2aITg0ILhMG1jk5Mt7BOTjx_gDElTdQ:1uUP6T:_MklsG0wU1b4DRJbbRgSWuiLgNzQDNptl5BVBydZxUU",
+    "expire_date": "2025-07-09T12:19:49.794Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6mpb79xlwxhvo8or0qwc2clit0zzz7b6",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgyggu3fcMzQCDVA0kpV0Z765NutDtf-_9l5hoW8u0dV6mOYmLMOL0uwWKD647SHeqtyZjq-syB7kr8qBdji3x83q4fweFevnW1nlC6wmsjR48BsgKFQaViAejUKvsk2aITg0ILhMG1jk5Mt7BOTjx_gDElTdQ:1uUOHw:JNQaxb5bDhMz2wXTABj1kz1gTxBkYVBxu7iBcHdRGKo",
+    "expire_date": "2025-07-09T11:27:36.495Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7ih49j05xtlpc13d24jtgx6hi8ebvaex",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgyggu3fcMzQCDVA0kpV0Z765NutDtf-_9l5hoW8u0dV6mOYmLMOL0uwWKD647SHeqtyZjq-syB7kr8qBdji3x83q4fweFevnW1nlC6wmsjR48BsgKFQaViAejUKvsk2aITg0ILhMG1jk5Mt7BOTjx_gDElTdQ:1uU7m9:LFDkplLNWMI9WkHQcE_UflYOEkXej8N0b5W--_6Awww",
+    "expire_date": "2025-07-08T17:49:41.618Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9bjd3kvio39fs1wo95py0kawftztszly",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgyggu3fcMzQCDVA0kpV0Z765NutDtf-_9l5hoW8u0dV6mOYmLMOL0uwWKD647SHeqtyZjq-syB7kr8qBdji3x83q4fweFevnW1nlC6wmsjR48BsgKFQaViAejUKvsk2aITg0ILhMG1jk5Mt7BOTjx_gDElTdQ:1uU7Tr:l7RLpDGeI0JxXUtzCpso5T3kxTLZPd_gb4VaKsOstTk",
+    "expire_date": "2025-07-08T17:30:47.981Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9dk277mobyg5gsehs0jttv906ial5utl",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgyggu3fcMzQCDVA0kpV0Z765NutDtf-_9l5hoW8u0dV6mOYmLMOL0uwWKD647SHeqtyZjq-syB7kr8qBdji3x83q4fweFevnW1nlC6wmsjR48BsgKFQaViAejUKvsk2aITg0ILhMG1jk5Mt7BOTjx_gDElTdQ:1uUP3M:28xkrSjAfd9F2qdV0jcBJ1imxs-F7-5dp_suUW5g-cU",
+    "expire_date": "2025-07-09T12:16:36.945Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hsw0pi85suo0nj1gvzqi4eef6ugc88n3",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHD9MHg0r3fQAYGpGpoUtqV8d-1SRe6veec-1Ket7X4raXFT6LOCtXpdwscH6nuQO5cb7OOc12XKehd0Qdt-jpLel4O9--gcCvfOgsG14vL2A2RkBOANcEaYhkzwNCPjhw7QgfMHTGBIUzZSjCAFI16fwDYWDdC:1uUS7V:dqqTCLi5H7D6T_aH7Hbo1xpC91DPJhrA88gAvUVcfRE",
+    "expire_date": "2025-06-26T15:33:05.996Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yadkbdh15wsjarzzdkrk3002u6ejsm4g",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHD9MHg0r3fQAYGpGpoUtqV8d-1SRe6veec-1Ket7X4raXFT6LOCtXpdwscH6nuQO5cb7OOc12XKehd0Qdt-jpLel4O9--gcCvfOgsG14vL2A2RkBOANcEaYhkzwNCPjhw7QgfMHTGBIUzZSjCAFI16fwDYWDdC:1uUSLD:FmtfREgQH5BbjmvLiNiSFUzyKIvSGBok-ALNi0XxQO0",
+    "expire_date": "2025-06-26T15:47:15.823Z"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 1,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-26",
+    "time": "06:00:00",
+    "temperature": "20.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 2,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-26",
+    "time": "09:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 3,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-26",
+    "time": "12:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 4,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-26",
+    "time": "15:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 5,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-26",
+    "time": "18:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 6,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-26",
+    "time": "21:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 7,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-26",
+    "time": "06:00:00",
+    "temperature": "20.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 8,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-26",
+    "time": "09:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 9,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-26",
+    "time": "12:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 10,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-26",
+    "time": "15:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 11,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-26",
+    "time": "18:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 12,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-26",
+    "time": "21:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 13,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-26",
+    "time": "06:00:00",
+    "temperature": "20.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 14,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-26",
+    "time": "09:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 15,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-26",
+    "time": "12:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 16,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-26",
+    "time": "15:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 17,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-26",
+    "time": "18:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 18,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-26",
+    "time": "21:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 19,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-26",
+    "time": "06:00:00",
+    "temperature": "20.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 20,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-26",
+    "time": "09:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 21,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-26",
+    "time": "12:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 22,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-26",
+    "time": "15:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 23,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-26",
+    "time": "18:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 24,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-26",
+    "time": "21:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 25,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-26",
+    "time": "06:00:00",
+    "temperature": "20.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 26,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-26",
+    "time": "09:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 27,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-26",
+    "time": "12:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 28,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-26",
+    "time": "15:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 29,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-26",
+    "time": "18:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 30,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-26",
+    "time": "21:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 31,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-26",
+    "time": "06:00:00",
+    "temperature": "20.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 32,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-26",
+    "time": "09:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 33,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-26",
+    "time": "12:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 34,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-26",
+    "time": "15:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 35,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-26",
+    "time": "18:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 36,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-26",
+    "time": "21:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 37,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-27",
+    "time": "06:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 38,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-27",
+    "time": "09:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 39,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-27",
+    "time": "12:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 40,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-27",
+    "time": "15:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 41,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-27",
+    "time": "18:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 42,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-27",
+    "time": "21:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 43,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-27",
+    "time": "06:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 44,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-27",
+    "time": "09:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 45,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-27",
+    "time": "12:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 46,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-27",
+    "time": "15:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 47,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-27",
+    "time": "18:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 48,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-27",
+    "time": "21:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 49,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-27",
+    "time": "06:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 50,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-27",
+    "time": "09:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 51,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-27",
+    "time": "12:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 52,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-27",
+    "time": "15:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 53,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-27",
+    "time": "18:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 54,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-27",
+    "time": "21:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 55,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-27",
+    "time": "06:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 56,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-27",
+    "time": "09:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 57,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-27",
+    "time": "12:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 58,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-27",
+    "time": "15:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 59,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-27",
+    "time": "18:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 60,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-27",
+    "time": "21:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 61,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-27",
+    "time": "06:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 62,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-27",
+    "time": "09:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 63,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-27",
+    "time": "12:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 64,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-27",
+    "time": "15:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 65,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-27",
+    "time": "18:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 66,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-27",
+    "time": "21:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 67,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-27",
+    "time": "06:00:00",
+    "temperature": "21.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 68,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-27",
+    "time": "09:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 69,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-27",
+    "time": "12:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 70,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-27",
+    "time": "15:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 71,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-27",
+    "time": "18:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 72,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-27",
+    "time": "21:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 73,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-28",
+    "time": "06:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 74,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-28",
+    "time": "09:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 75,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-28",
+    "time": "12:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 76,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-28",
+    "time": "15:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 77,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-28",
+    "time": "18:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 78,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-28",
+    "time": "21:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 79,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-28",
+    "time": "06:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 80,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-28",
+    "time": "09:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 81,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-28",
+    "time": "12:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 82,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-28",
+    "time": "15:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 83,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-28",
+    "time": "18:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 84,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-28",
+    "time": "21:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 85,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-28",
+    "time": "06:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 86,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-28",
+    "time": "09:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 87,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-28",
+    "time": "12:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 88,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-28",
+    "time": "15:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 89,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-28",
+    "time": "18:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 90,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-28",
+    "time": "21:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 91,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-28",
+    "time": "06:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 92,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-28",
+    "time": "09:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 93,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-28",
+    "time": "12:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 94,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-28",
+    "time": "15:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 95,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-28",
+    "time": "18:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 96,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-28",
+    "time": "21:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 97,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-28",
+    "time": "06:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 98,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-28",
+    "time": "09:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 99,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-28",
+    "time": "12:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 100,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-28",
+    "time": "15:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 101,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-28",
+    "time": "18:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 102,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-28",
+    "time": "21:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 103,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-28",
+    "time": "06:00:00",
+    "temperature": "22.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 104,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-28",
+    "time": "09:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 105,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-28",
+    "time": "12:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 106,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-28",
+    "time": "15:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 107,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-28",
+    "time": "18:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 108,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-28",
+    "time": "21:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 109,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-29",
+    "time": "06:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 110,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-29",
+    "time": "09:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 111,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-29",
+    "time": "12:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 112,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-29",
+    "time": "15:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 113,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-29",
+    "time": "18:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 114,
+  "fields": {
+    "location": "Roma",
+    "date": "2025-06-29",
+    "time": "21:00:00",
+    "temperature": "28.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 115,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-29",
+    "time": "06:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 116,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-29",
+    "time": "09:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 117,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-29",
+    "time": "12:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 118,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-29",
+    "time": "15:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 119,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-29",
+    "time": "18:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 120,
+  "fields": {
+    "location": "Milano",
+    "date": "2025-06-29",
+    "time": "21:00:00",
+    "temperature": "28.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 121,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-29",
+    "time": "06:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 122,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-29",
+    "time": "09:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 123,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-29",
+    "time": "12:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 124,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-29",
+    "time": "15:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 125,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-29",
+    "time": "18:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 126,
+  "fields": {
+    "location": "Napoli",
+    "date": "2025-06-29",
+    "time": "21:00:00",
+    "temperature": "28.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 127,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-29",
+    "time": "06:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 128,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-29",
+    "time": "09:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 129,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-29",
+    "time": "12:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 130,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-29",
+    "time": "15:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 131,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-29",
+    "time": "18:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 132,
+  "fields": {
+    "location": "Torino",
+    "date": "2025-06-29",
+    "time": "21:00:00",
+    "temperature": "28.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 133,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-29",
+    "time": "06:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 134,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-29",
+    "time": "09:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 135,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-29",
+    "time": "12:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 136,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-29",
+    "time": "15:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 137,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-29",
+    "time": "18:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 138,
+  "fields": {
+    "location": "Bologna",
+    "date": "2025-06-29",
+    "time": "21:00:00",
+    "temperature": "28.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 139,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-29",
+    "time": "06:00:00",
+    "temperature": "23.00",
+    "description": "Parzialmente nuvoloso"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 140,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-29",
+    "time": "09:00:00",
+    "temperature": "24.00",
+    "description": "Pioggia"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 141,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-29",
+    "time": "12:00:00",
+    "temperature": "25.00",
+    "description": "Temporale"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 142,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-29",
+    "time": "15:00:00",
+    "temperature": "26.00",
+    "description": "Sereno"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 143,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-29",
+    "time": "18:00:00",
+    "temperature": "27.00",
+    "description": "Soleggiato"
+  }
+},
+{
+  "model": "api.forecast",
+  "pk": 144,
+  "fields": {
+    "location": "Palermo",
+    "date": "2025-06-29",
+    "time": "21:00:00",
+    "temperature": "28.00",
+    "description": "Poco nuvoloso"
+  }
+},
+{
+  "model": "api.history",
+  "pk": 13,
+  "fields": {
+    "user": 2,
+    "method": "GET",
+    "endpoint": "/api/forecast/",
+    "created_at": "2025-06-26T10:19:56.801Z"
+  }
+},
+{
+  "model": "api.history",
+  "pk": 14,
+  "fields": {
+    "user": 2,
+    "method": "GET",
+    "endpoint": "/api/forecast/",
+    "created_at": "2025-06-26T10:19:57.403Z"
+  }
+},
+{
+  "model": "api.history",
+  "pk": 15,
+  "fields": {
+    "user": 1,
+    "method": "GET",
+    "endpoint": "/api/forecast/",
+    "created_at": "2025-06-26T10:20:05.047Z"
+  }
+},
+{
+  "model": "api.history",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "method": "GET",
+    "endpoint": "/api/forecast/",
+    "created_at": "2025-06-26T10:20:05.918Z"
+  }
+},
+{
+  "model": "api.history",
+  "pk": 17,
+  "fields": {
+    "user": 1,
+    "method": "GET",
+    "endpoint": "/api/forecast/",
+    "created_at": "2025-06-26T10:48:06.052Z"
+  }
+},
+{
+  "model": "api.history",
+  "pk": 18,
+  "fields": {
+    "user": 1,
+    "method": "GET",
+    "endpoint": "/api/forecast/",
+    "created_at": "2025-06-26T10:48:13.991Z"
+  }
+},
+{
+  "model": "api.history",
+  "pk": 19,
+  "fields": {
+    "user": 2,
+    "method": "GET",
+    "endpoint": "/api/forecast/",
+    "created_at": "2025-06-26T10:48:21.483Z"
+  }
+},
+{
+  "model": "CustomUser.customuser",
+  "pk": 1,
+  "fields": {
+    "last_login": "2025-06-26T10:20:02.273Z",
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-06-25T13:19:49.951Z",
+    "username": "user_test",
+    "password": "pbkdf2_sha256$1000000$Zx90CKgEMsZUkMiPyZhu2b$2vy9irZWhMuw+8eL4r3hNEU0Y2cv4N83vm6bvzWk6g8=",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "CustomUser.customuser",
+  "pk": 2,
+  "fields": {
+    "last_login": "2025-06-26T10:48:19.642Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-06-25T13:20:12.402Z",
+    "username": "superuser_test",
+    "password": "pbkdf2_sha256$1000000$oJphxDwHHiVaDysuaXAMPv$/EVndvHzHrdzBURFYauRC1ruqMsgLZy3mrRqoJRPba4=",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
