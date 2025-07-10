@@ -77,14 +77,20 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-5. **Crea un superuser (opzionale)**
+5. **Preloaded Database (opzionale)**
+```bash
+python manage.py loaddata fixtures/initial_data.json
+```
+Usa il db con dati e utenti precaricati
+
+6. **Crea un superuser (opzionale)**
 
 ```bash
 python manage.py createsuperuser
 ```
 > **NOTA:** per facilitare il testing è già stato creato un superuser 
 
-6. **Avvia il server**
+7. **Avvia il server**
 
 ```bash
 python manage.py runserver
@@ -123,6 +129,7 @@ Inserisce una o più previsioni. Accetta JSON con uno o più oggetti:
     "temperature": 25,
     "description": "Pioggia leggera"
   }
+]
 ```
 I campi disponibili (e tutti required) sono: location, date, time, temperature e description
 
@@ -180,8 +187,8 @@ Registra un nuovo utente tramite credenziali username + password
 Effettua logout chiudendo la sessione 
 
 Per facilitare il testing è già stato creato un utente user e superuser
-- user -> username: `user_test`, password: `customusertestpassword`
-- superuser -> username: `superuser_test`, password: `customsuperusertestpassword`
+- user → username: `user_test`, password: `customusertestpassword`
+- superuser → username: `superuser_test`, password: `customsuperusertestpassword`
 
 ---
 
@@ -202,12 +209,4 @@ Visita la pagina `/api/home/` per accedere a un'interfaccia HTML semplice con:
 
 L'app è online su Railway:
 
-🔗 [https://nome-progetto.up.railway.app](https://nome-progetto.up.railway.app)
-
----
-
-## 📩 Contatti
-
-Per problemi o suggerimenti: [tuo@email.com]
-
----
+🔗 [https://djangoweatherapi-production.up.railway.app](https://djangoweatherapi-production.up.railway.app)
